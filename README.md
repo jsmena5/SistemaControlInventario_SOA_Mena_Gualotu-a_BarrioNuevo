@@ -9,20 +9,9 @@ Cliente (Frontend): Desarrollado con Vue 3 + Vite + Axios, encargado de consumir
 
 
 📦 Estructura del Repositorio
-/
-├── cliente/                     # Proyecto frontend (Vue 3)
-│   ├── src/
-│   │   ├── main.js
-│   │   ├── App.vue
-│   │   └── soapService.js       # Cliente SOAP (Axios)
-│   ├── .env                     # Variable VITE_SOAP_URL con la ruta del servicio
-│   ├── package.json
-│   └── vite.config.js
-│
-├── ferreServer.7z               # Servidor .NET comprimido (CoreWCF + MVC + PostgreSQL)
-│
-├── README.md                    # Este documento
-└── ...
+
+<img width="861" height="353" alt="image" src="https://github.com/user-attachments/assets/9d2989d5-61f2-4957-8008-88022c701d73" />
+
 
 
 ⚙️ Tecnologías Utilizadas
@@ -57,23 +46,11 @@ Login modal simulado (admin / 1234)
 
 
 🧠 Arquitectura del Sistema
-┌────────────────────────────────────────────────────────────────────┐
-│                           Backend (.NET)                           │
-│ ASP.NET Core MVC + CoreWCF + EF Core + PostgreSQL                  │
-│  - Endpoint SOAP: /soap/inventory (+ ?wsdl)                        │
-│  - Landing + Panel admin (MVC Razor)                               │
-│  - Autenticación básica (sesión local)                             │
-└────────────────────────────────────────────────────────────────────┘
-                ▲                                   │
-                │  SOAP 1.1 (text/xml; SOAPAction)  │
-                ▼                                   │
-┌────────────────────────────────────────────────────────────────────┐
-│                           Frontend (Vue)                           │
-│ Vue 3 + Axios + Bootstrap                                          │
-│  - soapService.js: Inserción y consulta de ítems vía SOAP          │
-│  - .env define la URL del servicio SOAP                            │
-│  - Modal de login (admin / 1234)                                   │
-└────────────────────────────────────────────────────────────────────┘
+
+<img width="1195" height="396" alt="image" src="https://github.com/user-attachments/assets/ab851c72-652a-482f-a7d1-309469293dff" />
+
+
+
 
 
 🧩 Instalación y Ejecución
@@ -220,6 +197,4 @@ SistemaControlInventario_SOA_Mena_Gualotuña_BarrioNuevo
 Proyecto colaborativo desarrollado por:
 Lenin Barrionuevo
 Jesús Mena
-Kevin Gualotuña
-
-[otros integrantes si los deseas agregar]
+Paúl Gualotuña
